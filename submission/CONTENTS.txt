@@ -5,6 +5,7 @@
 - mc_motd_retriever.py
 - папка submission/ (REPORT.md, INSTRUCTION.md, CONTENTS.txt)
 - папка submission/ (aleksey_logvinenko_report.md, алексейлогвиненко.pdf)
+- папка submission/ (алексейлогвиненко.md)
 - скриншоты/фото проверки (в текущем проекте: фотки.pdf)
 
 Что архивировать:
