@@ -1,0 +1,9 @@
+[14:10:28] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.4.0-SNAPSHOT (git-4bc3f004-b559)...
+[14:10:29] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[14:10:29] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[14:10:29] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[14:10:29] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: Player info forwarding is disabled! All players will appear to be connecting from the proxy and will have offline-mode UUIDs.
+[14:10:29] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[14:10:29] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 1 plugins
+[14:10:29] [Netty epoll Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[14:10:29] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1.95s)!

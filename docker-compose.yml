@@ -1,0 +1,41 @@
+﻿services:
+  paper:
+    build:
+      context: ./paper
+      dockerfile: Dockerfile
+    container_name: dz22-paper
+    restart: unless-stopped
+    expose:
+      - "25570"
+    environment:
+      PAPER_VERSION: "1.16.5"
+      PAPER_MIN_RAM: "512M"
+      PAPER_MAX_RAM: "1G"
+      BACKEND_MOTD: "backend \u0441\u0435\u0440\u0432\u0435\u0440 happy_end_always"
+    volumes:
+      - ./paper/data:/srv/paper
+    networks:
+      - mcnet
+
+  velocity:
+    build:
+      context: ./velocity
+      dockerfile: Dockerfile
+    container_name: dz22-velocity
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+    environment:
+      VELOCITY_BIND: "0.0.0.0:25565"
+      VELOCITY_BACKEND: "paper:25570"
+    volumes:
+      - ./velocity/data:/srv/velocity
+    depends_on:
+      - paper
+    networks:
+      - mcnet
+
+networks:
+  mcnet:
+    driver: bridge
+

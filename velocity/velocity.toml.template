@@ -1,0 +1,19 @@
+config-version = "2.7"
+bind = "${VELOCITY_BIND}"
+motd = "Velocity proxy"
+show-max-players = 100
+online-mode = false
+force-key-authentication = false
+player-info-forwarding-mode = "none"
+ping-passthrough = "all"
+announce-forge = false
+kick-existing-players = false
+
+[servers]
+paper = "${VELOCITY_BACKEND}"
+try = ["paper"]
+
+[forced-hosts]
+"lobby.example.com" = ["paper"]
+"factions.example.com" = ["paper"]
+"minigames.example.com" = ["paper"]
